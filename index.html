@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gitstar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="node_modules/@babel/polyfill/dist/polyfill.js" defer></script>
+    <script src="dist/star.js" defer></script>
+</head>
+<body>
+<form>
+    <div>
+        <label>Name:</label>
+        <input id="name" name="name" type="text">
+    </div>
+    <div>
+        <label>Start Date:</label>
+        <input id="startdate" name="startdate" type="date">
+    </div>
+    <div>
+        <label>End Date:</label>
+        <input id="enddate" name="enddate" type="date">
+    </div>
+    <div>
+        <input id="submit" type="submit" value="Search">
+    </div>
+</form>
+
+<h4 class="hidden">Top 3 Popular Repos:</h4>
+<ul id="results">
+
+</ul>
+</body>
+</html>
