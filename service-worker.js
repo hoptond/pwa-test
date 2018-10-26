@@ -1,19 +1,13 @@
 var log = console.log.bind(console)
-var version = '0.0.6'
-var cacheName = 'todoit'
+var version = '0.0.1'
+var cacheName = 'gitstar'
 var cache = cacheName + '-' + version
 var filesToCache  = [
-    'http://localhost:8888/css/style.css',
-    'http://localhost:8888/js/app.js',
-    'http://localhost:8888/js/localforage.js',
-    'http://localhost:8888/images/icons/favicon.ico',
-    'http://localhost:8888/images/icons/icon-favicon-144x144.png',
-    'http://localhost:8888/manifest.json',
-    'http://localhost:8888/',
-    'http://localhost:8888/index.php'
+    'http://localhost:8080/css/style.css',
+    'http://localhost:8080/manifest.json',
+    'http://localhost:8080/',
+    'http://localhost:8080/index.html'
 ]
-
-
 
 self.addEventListener('install', function (event) {
     log('[ServiceWorker] Installing...')
