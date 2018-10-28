@@ -21,7 +21,7 @@ gulp.task('sass:watch', function () {
 gulp.task("babel", function () {
     return gulp.src("js/*.js")
         .pipe(babel())
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("./dist"));
 })
 
 
